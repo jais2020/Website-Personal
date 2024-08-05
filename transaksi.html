@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>CV. Tahu Rafih Kataji Mandiri</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">Produk</a>
+        <a href="transaksi.html">Transaksi</a>
+        <a href="tentang.html">Tentang Kami</a>
+    </div>
+    <div class="content">
+        <div class="sidebar">
+            <p>Sidebar Left</p>
+        </div>
+        <div class="main-content">
+            <h2>Formulir Transaksi</h2>
+            <form action="submit_transaction" method="post">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama">
+                <label for="alamat">Alamat:</label>
+                <input type="text" id="alamat" name="alamat">
+                <label for="produk">Produk:</label>
+                <select id="produk" name="produk">
+                    <option value="produk1">Tahu Mentah</option>
+                    <option value="produk2">Tahu Goreng</option>
+                </select>
+                <label for="jumlah">Jumlah:</label>
+                <input type="number" id="jumlah" name="jumlah">
+                <label for="pembayaran">Metode Pembayaran:</label>
+                <input type="radio" id="kartu" name="pembayaran" value="kartu">
+                <label for="kartu">Kartu Kredit</label>
+                <input type="radio" id="transfer" name="pembayaran" value="transfer">
+                <label for="transfer">Transfer Bank</label>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="sidebar">
+            <p>Sidebar Right</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
